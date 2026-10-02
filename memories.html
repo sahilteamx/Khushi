@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="A collection of memories created for Khushi."><meta name="theme-color" content="#08090d">
+<title>Memories · Khushi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/memories.css">
+<script src="js/animations.js" defer></script><script src="js/main.js" defer></script><script src="js/memories.js" defer></script>
+</head>
+<body class="page-memories">
+<div class="page-transition" id="pageTransition" aria-hidden="true"><span class="transition-mark">K</span></div><div class="page-noise" aria-hidden="true"></div>
+<header class="site-header"><a href="index.html" class="brand"><span class="brand-mark">K</span><span class="brand-text">For Khushi</span></a><button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="site-nav" id="siteNav" aria-label="Main navigation"><a href="index.html" class="nav-link">Home</a><a href="memories.html" class="nav-link is-active" aria-current="page">Memories</a><a href="story.html" class="nav-link">Story</a><a href="surprise.html" class="nav-link">Surprise</a><a href="message.html" class="nav-link">Message</a></nav></header>
+<main>
+<section class="page-hero memories-hero"><div class="container"><p class="eyebrow reveal">Chapter one · The moments</p><h1 class="page-title reveal">Memories<br><em>worth keeping.</em></h1><p class="page-intro reveal">Every photograph will eventually have its own place here. Add real photographs to the paths below; no personal images are invented by this foundation.</p></div></section>
+<section class="memory-gallery section"><div class="container"><div class="gallery-toolbar reveal"><div><span class="section-number">01</span><p>Tap any memory to open it full-screen.</p></div><span class="gallery-count" id="galleryCount">0 photos</span></div><div class="memory-grid" id="memoryGrid">
+<article class="memory-card memory-card--large reveal" data-photo="images/memories/photo-01.jpg" data-title="[Memory 01]" data-caption="[Add a personal caption.]"><button class="memory-open" type="button" aria-label="Open Memory 01"><div class="memory-placeholder"><img data-src="images/memories/photo-01.jpg" alt="" loading="lazy" decoding="async"><span class="placeholder-index">01</span><span class="placeholder-text">PERSONAL PHOTO</span><span class="placeholder-path">images/memories/photo-01.jpg</span></div></button><div class="memory-info"><span>Memory 01</span><h2>[Add a title]</h2><p>[Add a short personal caption.]</p></div></article>
+<article class="memory-card reveal" data-photo="images/memories/photo-02.jpg" data-title="[Memory 02]" data-caption="[Add a personal caption.]"><button class="memory-open" type="button" aria-label="Open Memory 02"><div class="memory-placeholder"><img data-src="images/memories/photo-02.jpg" alt="" loading="lazy" decoding="async"><span class="placeholder-index">02</span><span class="placeholder-text">PERSONAL PHOTO</span><span class="placeholder-path">images/memories/photo-02.jpg</span></div></button><div class="memory-info"><span>Memory 02</span><h2>[Add a title]</h2><p>[Add a short personal caption.]</p></div></article>
+<article class="memory-card reveal" data-photo="images/memories/photo-03.jpg" data-title="[Memory 03]" data-caption="[Add a personal caption.]"><button class="memory-open" type="button" aria-label="Open Memory 03"><div class="memory-placeholder"><img data-src="images/memories/photo-03.jpg" alt="" loading="lazy" decoding="async"><span class="placeholder-index">03</span><span class="placeholder-text">PERSONAL PHOTO</span><span class="placeholder-path">images/memories/photo-03.jpg</span></div></button><div class="memory-info"><span>Memory 03</span><h2>[Add a title]</h2><p>[Add a short personal caption.]</p></div></article>
+<article class="memory-card memory-card--wide reveal" data-photo="images/memories/photo-04.jpg" data-title="[Memory 04]" data-caption="[Add a personal caption.]"><button class="memory-open" type="button" aria-label="Open Memory 04"><div class="memory-placeholder"><img data-src="images/memories/photo-04.jpg" alt="" loading="lazy" decoding="async"><span class="placeholder-index">04</span><span class="placeholder-text">PERSONAL PHOTO</span><span class="placeholder-path">images/memories/photo-04.jpg</span></div></button><div class="memory-info"><span>Memory 04</span><h2>[Add a title]</h2><p>[Add a short personal caption.]</p></div></article>
+</div></div></section>
+<section class="memory-closing section"><div class="container"><div class="closing-card reveal"><p class="eyebrow">More moments will be added</p><h2>Because some memories<br><em>deserve their own space.</em></h2><a href="story.html" class="button button--primary">Continue to the story <span class="button-arrow">↗</span></a></div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span class="brand-mark">K</span><span>Made especially<br><em>for Khushi.</em></span></div><p class="footer-copy">© <span id="currentYear"></span> · For Khushi</p></div></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">×</button><button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">‹</button><figure class="lightbox-figure"><div class="lightbox-media"><img id="lightboxImage" alt="" decoding="async"><div class="lightbox-placeholder" id="lightboxPlaceholder">Photo placeholder</div></div><figcaption><span id="lightboxCounter">01 / 04</span><strong id="lightboxTitle">[Memory]</strong><p id="lightboxCaption">[Caption]</p></figcaption></figure><button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next image">›</button></div>
+<div class="music-player" id="musicPlayer" aria-label="Birthday music player">
+  <audio id="birthdayAudio" preload="none" data-src="music/birthday.mp3"></audio>
+  <button class="music-main" id="musicToggle" type="button" aria-label="Play birthday music" aria-pressed="false">
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <div class="music-meta"><span class="music-title">Birthday soundtrack</span><span class="music-status" id="musicStatus">Tap to play</span></div>
+  <div class="music-controls">
+    <button type="button" id="musicMute" aria-label="Mute music">M</button>
+    <input id="musicVolume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+    <span id="musicTime">00:00 / 00:00</span>
+  </div>
+  <input class="music-progress" id="musicProgress" type="range" min="0" max="100" step="0.1" value="0" aria-label="Music progress">
+  <button class="music-close" id="musicClose" type="button" aria-label="Minimize music player">×</button>
+</div>
+</body></html>
