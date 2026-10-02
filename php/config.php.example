@@ -1,0 +1,9 @@
+# Server-side environment variables for the Khushi Birthday project.
+# Do not commit real secrets.
+KHUSHI_DB_HOST=127.0.0.1
+KHUSHI_DB_NAME=khushi_birthday
+KHUSHI_DB_USER=your_mysql_user
+KHUSHI_DB_PASS=your_mysql_password
+KHUSHI_ADMIN_USERNAME=your_admin_username
+KHUSHI_ADMIN_PASSWORD_HASH=your_password_hash
+KHUSHI_FORCE_SECURE_COOKIE=0
