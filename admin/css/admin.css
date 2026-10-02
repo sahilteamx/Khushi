@@ -1,0 +1,49 @@
+:root{--bg:#08090d;--surface:#101218;--text:#f4efe8;--soft:#d8d0c7;--muted:#8e8a85;--accent:#d7a96d;--line:rgba(255,255,255,.11);--danger:#f0a0a0;--ease:cubic-bezier(.2,.7,.2,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-width:320px;background:radial-gradient(circle at 50% -10%,rgba(215,169,109,.08),transparent 32%),var(--bg);color:var(--text);font:14px/1.7 Inter,Arial,sans-serif;overflow-x:hidden}
+button,input{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.55}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.admin-shell{min-height:100svh;padding:24px}
+.admin-login-shell{display:grid;place-items:center}
+.admin-card{width:min(100%,460px);padding:clamp(26px,6vw,38px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:0 30px 90px rgba(0,0,0,.3)}
+.admin-card-top,.admin-header,.panel-heading,.message-item-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+.admin-kicker,.panel-kicker{color:var(--accent);font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.admin-lock{color:var(--muted);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+.admin-card h1,.admin-header h1{margin:12px 0 0;font:400 clamp(42px,7vw,62px)/.95 "Cormorant Garamond",Georgia,serif;letter-spacing:-.03em}
+.admin-intro{max-width:560px;margin:18px 0 0;color:var(--muted);font-size:12px;line-height:1.8}
+.admin-error{margin:20px 0 0;padding:12px 14px;border:1px solid rgba(240,160,160,.25);border-radius:12px;background:rgba(160,40,40,.08);color:var(--danger);font-size:12px}
+.admin-card form{display:grid;gap:10px;margin-top:26px}
+.admin-card label{display:grid;gap:7px;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.admin-card input{width:100%;min-height:48px;border:1px solid var(--line);border-radius:12px;background:rgba(6,7,10,.55);color:var(--text);padding:0 14px}
+.admin-card input:focus{border-color:rgba(215,169,109,.6);outline:none}
+.admin-button{min-height:48px;border:1px solid var(--accent);border-radius:999px;background:var(--accent);color:var(--bg);padding:0 20px;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.admin-button--ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.admin-card .admin-button{margin-top:8px}
+.admin-link-button{border:0;background:none;color:var(--muted);padding:8px 0;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.admin-link-button:hover{color:var(--text)}
+.admin-back{display:inline-flex;margin-top:22px;color:var(--muted);font-size:11px}
+.admin-back:hover{color:var(--text)}
+.admin-dashboard{width:min(100%,1180px);margin:0 auto;padding:clamp(22px,5vw,60px) 0}
+.admin-header{align-items:flex-end;margin-bottom:34px}
+.logout-form{margin:0}
+.admin-panel{border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.025);overflow:hidden}
+.panel-heading{align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.panel-heading h2{margin:5px 0 0;font:400 38px/1 "Cormorant Garamond",Georgia,serif}
+.admin-status{margin:0;padding:14px 24px;border-bottom:1px solid var(--line);color:var(--muted);font-size:11px}
+.admin-status[data-state=success]{color:#a8d7a8}
+.admin-status[data-state=error]{color:var(--danger)}
+.message-list{display:grid}
+.message-item{padding:22px 24px;border-bottom:1px solid var(--line)}
+.message-item:last-child{border-bottom:0}
+.message-identity{display:grid;gap:2px;min-width:0}
+.message-identity strong{color:var(--text);font-weight:600;overflow-wrap:anywhere}
+.message-identity time{color:var(--muted);font-size:10px}
+.message-item-body{margin:14px 0 0;color:var(--soft);white-space:pre-wrap;overflow-wrap:anywhere}
+.delete-message{min-height:40px;border:1px solid rgba(240,160,160,.28);border-radius:999px;background:transparent;color:var(--danger);padding:0 15px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.delete-message:hover{background:rgba(160,40,40,.08)}
+.dashboard-footer{padding-top:18px}
+@media(max-width:700px){.admin-shell{padding:14px}.admin-card{border-radius:18px;padding:24px}.admin-header{align-items:flex-start;flex-direction:column}.panel-heading{align-items:flex-start;flex-direction:column;padding:18px}.panel-heading h2{font-size:33px}.message-item{padding:18px}.message-item-top{align-items:flex-start}.delete-message{min-height:44px}.admin-dashboard{padding-block:16px}}
